@@ -3,11 +3,8 @@ class Solution {
         String answer="";
         
         for(int i=0; i<str1.length(); i++){
-            
-            char s = str1.charAt(i);
-            char t = str2.charAt(i);
-            
-            answer += String.valueOf(s)+String.valueOf(t);
+                     
+            answer += ""+ str1.charAt(i) + str2.charAt(i);
         }
         return answer;
     }
