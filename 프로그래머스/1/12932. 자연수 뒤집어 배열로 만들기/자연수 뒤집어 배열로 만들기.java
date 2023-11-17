@@ -3,7 +3,7 @@ class Solution {
         String str= ""+n;
         int[] answer = new int[str.length()];
         
-        for(int i=0; i<=str.length()-1; i++){
+        for(int i=0; i<str.length(); i++){
             answer[i] = (int) (n%10);
             n/=10;
         }
