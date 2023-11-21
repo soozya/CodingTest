@@ -1,14 +1,8 @@
 class Solution {
     public long solution(long n) {
         long answer=0;
+        long num=(long)Math.sqrt(n);
         
-        for(long x=1; x*x<=n; x++){
-            if(x*x==n){
-                answer= (x+1)*(x+1);
-            }else{
-                answer = -1;
-            }
-        }
-        return answer;
+        return (long)Math.pow(num,2)==n ? (long)Math.pow(num+1,2) : -1;
     }
 }
