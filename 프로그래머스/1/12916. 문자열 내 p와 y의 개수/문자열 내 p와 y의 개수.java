@@ -5,11 +5,10 @@ class Solution {
         s=s.toLowerCase();
         
         for(int i=0; i<s.length(); i++){
-           if(s.charAt(i)=='p'){
+           if(s.charAt(i)=='p')
                p++;
-           }else if(s.charAt(i)=='y'){
+           else if(s.charAt(i)=='y')
                y++;
-           }
         } 
         return p!=y ? false : true;
     }
